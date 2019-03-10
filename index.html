@@ -104,8 +104,8 @@
 					<p>In order to get in touch use the contact form below:</p>
 				</div>
 				<form class="form-fields">
-					<input type="text" name="Name" placeholder="Name (Required)"><Br>
-					<input type="text" name="Email" placeholder="Email (Required)"><Br>
+					<input type="text" name="Name" placeholder="Name (Required)" required pattern="[A-Za-z1-9_-]+"><Br>
+					<input type="email" name="Email" placeholder="Email (Required)" required><Br>
 					<input type="text" name="Subject" placeholder="Subject"><Br>
 					<textarea name="message" placeholder="Write your message here..."></textarea>
 					<button type="submit" name="submit">Send</button>
@@ -115,8 +115,8 @@
 						aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae. </p>
 					<ul class="contacts">
 						<li class="location">Elm St. 14/05 Lost City </li>
-						<li class="phone">+ 3528 331 86 35 </li>
-						<li class="e-mail">info@hexalcorp.com</li>
+						<li class="phone"><a href="tel:+35283318635">+ 3528 331 86 35</a> </li>
+						<li class="e-mail"><a href="mailto:info@hexalcorp.com">info@hexalcorp.com</a></li>
 					</ul>
 				</div>
 			</div>

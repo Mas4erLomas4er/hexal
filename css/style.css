@@ -12,12 +12,12 @@ header {
 }
 
 .dot {
-    width: 3px;
-    height: 3px;
-    background-color: #4d4d4d;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+	width: 3px;
+	height: 3px;
+	background-color: #4d4d4d;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
 }
 
 .nav-list {
@@ -130,6 +130,27 @@ header::before {
 
 .row:nth-child(odd) {
 	width: 780px;
+	position: relative;
+}
+
+.row:nth-child(odd)::before {
+	position: absolute;
+	left: -20px;
+	top: 51px;
+	content: "";
+	width: 1px;
+	height: 104px;
+	background-color: #e4e9eb;
+}
+
+.row:nth-child(odd)::after {
+	position: absolute;
+	right: -20px;
+	top: 51px;
+	content: "";
+	width: 1px;
+	height: 104px;
+	background-color: #e4e9eb;
 }
 
 .row:nth-child(even) {
@@ -420,10 +441,16 @@ ul.contacts li.e-mail::before {
 	background-image: url(../img/mail.png);
 }
 
+ul.contacts li a {
+	color: #bebebe;
+	text-decoration: none;
+}
+
 footer {
 	height: 43px;
 	background-color: #222222;
 }
+
 footer p {
 	margin-left: 10px;
 	height: 100%;
